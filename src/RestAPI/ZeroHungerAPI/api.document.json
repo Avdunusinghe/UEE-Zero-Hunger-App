@@ -1,0 +1,45 @@
+{
+	"UserAPI": {
+		"UserLogin": {
+			"HTTPRequest": {
+				"method": "POST",
+				"description": "userLogin",
+				"url": "http://localhost:4000/api/auth",
+
+				"body": {
+					"email": "",
+					"password": ""
+				}
+			}
+		},
+		"UserRegister": {
+			"HTTPRequest": {
+				"method": "POST",
+				"description": "userRegister",
+				"url": "http://localhost:4000/api/user",
+
+				"body": {
+					"id": null,
+					"fullName": "",
+					"email": "",
+					"mobileNumber": "",
+					"password": "",
+					"role": "This is Enum value Contact Developer"
+				}
+			}
+		}
+	},
+	"QuestionAPI": {
+		"SubmitQuestion": {
+			"HTTPRequest": {
+				"method": "POST",
+				"description": "submitQuestion",
+				"url": "http://localhost:4000/api/question",
+
+				"body": {
+					"question": ""
+				}
+			}
+		}
+	}
+}
